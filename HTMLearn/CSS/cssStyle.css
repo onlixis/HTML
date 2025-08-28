@@ -1,0 +1,23 @@
+.rounded-img {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.rounded-img:hover {
+  transform: scale(2);
+  rotate: 0deg;
+  transition: transform 1.3s ease-in-out, rotate 1.3s ease-in-out;
+}
+
+.rounded-img:not(:hover) {
+  transform: scale(1);
+  rotate: 360deg;
+  transition: transform 2.3s ease-in, rotate 2.3s ease-in;
+}
+.rounded-img:click {
+  transform: scale(1);
+  rotate: 180deg;
+  transition: transform 2.3s ease-in, rotate 2.3s ease-in;
+}
